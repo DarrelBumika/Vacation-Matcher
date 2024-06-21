@@ -6,11 +6,11 @@ function App() {
     // const tahap = ["Input Kriteria", "Input Alternatif", "Hasil Perhitungan"]
     const tahap= {
         "inputKriteria": {
-            "title" : "Input Kriteria",
+            "title" : "Masukkan Kriteria",
             "num"   : 1
         }, 
         "inputAlternatif": {
-            "title" :"Input Alternatif",
+            "title" :"Masukkan Tujuan Wisata",
             "num"   : 2
         }, 
         "hasilPerhitungan": {
@@ -252,8 +252,17 @@ function App() {
                                 <div className="max-w-20 w-full h-20 flex justify-center items-center bg-primary-main rounded-3xl font-poppins font-bold text-white text-3xl">1</div>
                                 <div className="flex flex-col gap-5">
                                     <div className="flex items-center font-poppins font-bold text-5xl">{Object.values(tahap)[0]["title"]}</div>
-                                    <p className="flex font-poppins font-normal text-base text-justify max-w-[700px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis recusandae vero officia atque perspiciatis mollitia sequi autem non nulla 
-                                    adipisci, ipsam impedit et quidem, laboriosam praesentium architecto quasi excepturi blanditiis!</p>
+                                    <p className="font-poppins font-normal text-base text-justify max-w-[700px]">
+                                        Masukkan kriteria yang anda perimbangkan dalam memilih tempat 
+                                        wisata pada kolom <span className="text-primary-main font-semibold">nama kriteria</span>. Anda dapat mempertimbangkan berbagai hal 
+                                        seperti harga tiket masuk, bintang hotel, serta rating dan ulasan tempat wisata. 
+                                        Pililah <span className="text-primary-main font-semibold">benefit</span> apabila semakin tinggi nilai kriteria tersebut akan semakin 
+                                        menguntungkan anda, dan pilihlah <span className="text-primary-main font-semibold">cost</span> apabila semakin tinggi nilai dari 
+                                        kriteria tersebut akan semakin mengurungkan minat anda terhadap tempat wisata. Terakhir, 
+                                        tentukan <span className="text-primary-main font-semibold">bobot</span> dari kriteria yang anda tuliskan dalam format bilangan bulat. 
+                                        Ingatlah bahwa <span className="text-primary-main font-semibold">semakin tinggi bobot kriteria, berarti semakin penting kriteria tersebut </span> 
+                                        dalam perhitungan ini.
+                                    </p>
                                 </div>
                             </div>
 
@@ -328,8 +337,11 @@ function App() {
                                 <div className="w-20 h-20 flex justify-center items-center bg-primary-main rounded-3xl font-poppins font-bold text-white text-3xl">2</div>
                                 <div className="flex flex-col gap-5">
                                     <div className="flex items-center font-poppins font-bold text-5xl">{Object.values(tahap)[1]["title"]}</div>
-                                    <p className="font-poppins font-normal text-base text-justify max-w-[700px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis recusandae vero officia atque perspiciatis mollitia sequi autem non nulla 
-                                    adipisci, ipsam impedit et quidem, laboriosam praesentium architecto quasi excepturi blanditiis!</p>
+                                    <p className="font-poppins font-normal text-base text-justify max-w-[700px]">
+                                        Tentukan wisata mana saja yang ingin anda datangi. Nilailah 
+                                        tempat tersebut berdasarkan kriteria-kriteria penilaian yang anda berikan pada tahap sebelumnya. Pastikan format penilaian yang anda 
+                                        berikan menggunakan <span className="text-primary-main font-semibold">bilangan bulat</span>.
+                                    </p>
                                 </div>
                             </div>
                             {
@@ -417,8 +429,12 @@ function App() {
                                 <div className="w-20 h-20 flex justify-center items-center bg-primary-main rounded-3xl font-poppins font-bold text-white text-3xl">3</div>
                                 <div className="flex flex-col gap-5">
                                     <div className="flex items-center font-poppins font-bold text-5xl">{Object.values(tahap)[2]["title"]}</div>
-                                    <p className="font-poppins font-normal text-base text-justify max-w-[700px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis recusandae vero officia atque perspiciatis mollitia sequi autem non nulla 
-                                    adipisci, ipsam impedit et quidem, laboriosam praesentium architecto quasi excepturi blanditiis!</p>
+                                    <p className="font-poppins font-normal text-base text-justify max-w-[700px]">
+                                        Di bawah ini adalah <span className="text-primary-main font-semibold">hasil perhitungan</span> tempat wisata berdasarkan kriteria-kriteria dan 
+                                        nilai yang anda berikan terhadap tempat wisata tersebut. Hasil penilaian yang diberikan telah diurutkan dengan urutan teratas adalah tempat 
+                                        wisata dengan nilai paling tinggi dan paling direkomendasikan untuk anda kunjungi. 
+                                        <br />SELAMAT MENIKMATI LIBURAN ANDA!!!
+                                    </p>
                                 </div>
                             </div>
 
